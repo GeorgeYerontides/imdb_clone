@@ -8,4 +8,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  darkMode: 'class' // this is how we target what classes apply to darkMode and which dont
 }
