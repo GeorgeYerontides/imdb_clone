@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React, { Fragment } from 'react'
 
-const MenuItem = (props) => {
+const HeaderItem = (props) => {
   return (
     <Fragment>
         <Link href={props.address} className='mx-4 lg:mx-6 hover:text-amber-600' >
@@ -12,4 +12,4 @@ const MenuItem = (props) => {
   )
 }
 
-export default MenuItem
+export default HeaderItem
