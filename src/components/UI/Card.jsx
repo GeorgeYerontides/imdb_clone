@@ -5,7 +5,7 @@ import {FiThumbsUp} from "react-icons/fi";
 const Card = (props) => {
   return (
     <div className="group cursor-pointer rounded-lg transition-shadow duration-200 sm:m-2 sm:border sm:border-slate-400 sm:p-3 sm:shadow-md sm:hover:shadow-slate-400">
-      <Link href={`$/movie/${props.result.id}`}>
+      <Link href={`/movie/${props.result.id}`}>
         <Image
           src={`https://image.tmdb.org/t/p/original/${
             props.result.backdrop_path || props.result.poster_path
