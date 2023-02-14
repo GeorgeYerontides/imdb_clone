@@ -1,7 +1,9 @@
-import Header from "@/components/Header";
+'use client'
+
+import Header from "@/components/Header/Header";
 import "./globals.css";
 import Providers from "./Providers";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 
 export default function RootLayout({ children }) {
   return (

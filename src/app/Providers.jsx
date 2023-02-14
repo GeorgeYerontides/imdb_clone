@@ -3,14 +3,17 @@
 import { ThemeProvider } from 'next-themes'
 import React from 'react'
 
+
 const Providers = (props) => {
   return (
+
     // enableSystem = true: Whether to switch between dark and light based on prefers-color-scheme
-    <ThemeProvider enableSystem={true} attribute='class'>
+      <ThemeProvider enableSystem={true} attribute='class'>
         <div className='dark:bg-gray-700 dark:text-gray-200 text-gray-700 transition-colors duration-300 min-h-screen select-none'>
             {props.children}
         </div>
     </ThemeProvider>
+
   )
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 import HeaderItem from './HeaderItem';
 import {AiFillHome,AiFillInfoCircle} from 'react-icons/ai'
 import Link from 'next/link';
-import DarkMode from './DarkMode';
+import DarkMode from '../DarkMode';
 
 const Header = () => {
   return (

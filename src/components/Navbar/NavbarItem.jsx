@@ -7,13 +7,14 @@ const NavbarItem = (props) => {
 
   const searchParams =  useSearchParams();
   const genre = searchParams.get('genre');
+  const type = searchParams.get('type') || 'all';
   return (
     <div className='mx-2'>
-        <Link href={`/?genre=${props.param}`}  className={`m-4 hover:text-amber-600 font-semibold p2 ${
+        <Link href={`/?filter=${type}?genre=${props.param}`}  className={`m-4 hover:text-amber-600 font-semibold p2 ${
             genre && 
             genre === props.param && 
             'underline underline-offset-8 decoration-4 decoration-amber-500 rounded-lg'
-        }`} >{props.title}</Link>
+        }`} replace={true} >{props.title}</Link>
     </div>
   )
 }

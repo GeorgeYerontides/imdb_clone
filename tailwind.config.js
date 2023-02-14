@@ -7,6 +7,8 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
   darkMode: 'class' // this is how we target what classes apply to darkMode and which dont
 }
