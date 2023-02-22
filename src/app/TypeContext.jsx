@@ -4,12 +4,9 @@ import { createContext, useContext, useState } from "react";
 export const GlobalContext = createContext({});
 
 export default function GlobalContextProvider({ children }) {
-  const [loggedIn, setLoggedIn] = useState("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 
   return (
-    <GlobalContext.Provider value={{ loggedIn, setLoggedIn }}>
       {children}
-    </GlobalContext.Provider>
   );
 };
 
