@@ -1,5 +1,6 @@
 
 import Results from "@/components/Results";
+export const dynamic = "force-dynamic";
 // we use this to get the api key from env.local that is not uploaded to github
 const API_KEY = process.env.API_KEY;
 export default async function Home(props) {
@@ -23,4 +24,8 @@ export default async function Home(props) {
   return (
     <Results results={results} />
   )
+}
+
+export async function getServerSideProps(context){
+  
 }
